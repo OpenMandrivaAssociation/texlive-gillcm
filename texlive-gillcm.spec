@@ -1,3 +1,9 @@
+# revision 19878
+# category Package
+# catalog-ctan undef
+# catalog-date 2010-08-11 13:58:09 +0200
+# catalog-license other-free
+# catalog-version 1.1
 Name:		texlive-gillcm
 Version:	1.1
 Release:	1
@@ -78,6 +84,7 @@ package was written for the author's talk at TUG 2010.
 %doc %{_texmfdistdir}/doc/latex/gillcm/gillcm.pdf
 %doc %{_texmfdistdir}/doc/latex/gillcm/sample.pdf
 %doc %{_texmfdistdir}/doc/latex/gillcm/sample.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -88,3 +95,5 @@ package was written for the author's talk at TUG 2010.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
