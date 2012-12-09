@@ -85,3 +85,17 @@ package was written for the author's talk at TUG 2010.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.1-2
++ Revision: 752314
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.1-1
++ Revision: 718555
+- texlive-gillcm
+- texlive-gillcm
+- texlive-gillcm
+- texlive-gillcm
+
