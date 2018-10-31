@@ -6,7 +6,7 @@
 # catalog-version 1.1
 Name:		texlive-gillcm
 Version:	1.1
-Release:	10
+Release:	11
 Summary:	Alternative unslanted italic Computer Modern fonts
 Group:		Publishing
 URL:		http://tug.org/texlive
