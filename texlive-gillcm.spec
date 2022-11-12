@@ -1,18 +1,12 @@
-# revision 19878
-# category Package
-# catalog-ctan undef
-# catalog-date 2010-08-11 13:58:09 +0200
-# catalog-license other-free
-# catalog-version 1.1
 Name:		texlive-gillcm
-Version:	1.1
-Release:	11
+Version:	19878
+Release:	1
 Summary:	Alternative unslanted italic Computer Modern fonts
 Group:		Publishing
 URL:		http://tug.org/texlive
 License:	OTHER-FREE
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/gillcm.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/gillcm.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/gillcm.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/gillcm.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -24,12 +18,12 @@ effects: the package implements an old idea of Eric Gill. The
 package was written for the author's talk at TUG 2010.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -78,24 +72,10 @@ package was written for the author's talk at TUG 2010.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.1-2
-+ Revision: 752314
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.1-1
-+ Revision: 718555
-- texlive-gillcm
-- texlive-gillcm
-- texlive-gillcm
-- texlive-gillcm
-
