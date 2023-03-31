@@ -1,6 +1,6 @@
 Name:		texlive-gillcm
 Version:	19878
-Release:	1
+Release:	2
 Summary:	Alternative unslanted italic Computer Modern fonts
 Group:		Publishing
 URL:		http://tug.org/texlive
