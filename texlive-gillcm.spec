@@ -3,7 +3,7 @@ Version:	19878
 Release:	2
 Summary:	Alternative unslanted italic Computer Modern fonts
 Group:		Publishing
-URL:		http://tug.org/texlive
+URL:		https://tug.org/texlive
 License:	OTHER-FREE
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/gillcm.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/gillcm.doc.r%{version}.tar.xz
